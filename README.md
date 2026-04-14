@@ -1,83 +1,72 @@
+Here is your **final clean, professional README.md** (ready to copy & upload to GitHub) 👇
+
+---
 
 # 🚗 Cars Data Analysis Project
 
 ## 📌 Project Overview
 
-This project focuses on **data cleaning and analysis** of a cars dataset using the **Pandas library in Python**. The main objective is to preprocess the data, handle missing values, and extract meaningful insights through filtering and transformations.
-
+This project focuses on **data cleaning and analysis** of a cars dataset using the **Pandas library in Python**. The objective is to preprocess raw data, handle missing values, and perform analysis to extract meaningful insights.
 
 ---
 
 ## 📂 Dataset
 
-* The dataset was imported using `pd.read_csv()`
-* It contains information about different cars including attributes like **Make, Origin, Weight, MPG_City**, etc.
+* Dataset loaded using `pd.read_csv()`
+* Contains car attributes such as **Make, Origin, Weight, MPG_City**, etc.
 
 ---
 
-## ⚙️ Steps Performed
+## 🧰 Key Commands Used
 
-### 1. Data Loading & Exploration
+```python
+import pandas as pd - Import library
+pd.read_csv() - Load dataset
+head() - View first 5 rows
+shape - Check rows & columns
+df.isnull().sum() - Find missing values
+fillna() -  Handle null values
+value_counts() - Count unique values
+isin() - Filter data
+```
 
-* Imported dataset using `pd.read_csv()`
-* Used `head()` to preview data
-* Checked dataset size using `shape`
+---
 
-### 2. Data Cleaning
+## ⚙️ Analysis Performed
 
-* Identified missing values using:
+### 1. Data Cleaning
 
-  ```python
-  df.isnull().sum()
-  ```
-* Filled null values with column mean using:
+* Detected missing values using `df.isnull().sum()`
+* Filled null values with **mean of respective columns** using `fillna()`
 
-  ```python
-  fillna()
-  ```
+### 2. Value Counts Analysis
 
-### 3. Data Analysis
+* Identified different **car makes**
+* Calculated their occurrence using `value_counts()`
 
-#### ✔ Value Counts
+### 3. Data Filtering
 
-* Analyzed different car manufacturers using:
+* Filtered records where **Origin is Asia or Europe** using `isin()`
 
-  ```python
-  value_counts()
-  ```
+### 4. Removing Unwanted Records
 
-#### ✔ Filtering Data
+* Removed rows where **Weight > 4000** to eliminate outliers
 
-* Filtered records where Origin is **Asia or Europe** using:
+### 5. Applying Transformation
 
-  ```python
-  isin()
-  ```
-
-#### ✔ Removing Unwanted Data
-
-* Removed cars with **Weight > 4000**
-
-#### ✔ Applying Transformations
-
-* Increased all values of `MPG_City` column by 3 using:
-
-  ```python
-  apply()
-  ```
+* Increased all values in **MPG_City column by 3** using `apply()`
 
 ---
 
 ## 📊 Key Insights
 
-* Identified distribution of car manufacturers (Make)
-* Cleaned dataset by handling missing values effectively
-* Filtered region-specific data for better analysis
-* Removed high-weight outliers for better consistency
-* Adjusted fuel efficiency values for analysis
+* Cleaned dataset by handling missing values
+* Identified distribution of car manufacturers
+* Filtered region-based data (Asia & Europe)
+* Removed high-weight outliers for better analysis
+* Improved MPG values for analysis
 
 ---
-
 ## 🛠️ Tools & Technologies
 
 * Python
@@ -85,18 +74,16 @@ This project focuses on **data cleaning and analysis** of a cars dataset using t
 * Jupyter Notebook
 ---
 
-## 🚀 How to Clone the Project
-
-Follow these steps to run the project locally:
+## 🚀 How to Run the Project
 
 ```bash
-# Step 1: Clone the repository
+# Clone the repository
 git clone https://github.com/sriumamaheswari-pureti/Cars_Data_Analysis.git
 
-# Step 2: Navigate to the project folder
+# Navigate to folder
 cd Cars_Data_Analysis
 
-# Step 3: Open in Jupyter Notebook
+# Open Jupyter Notebook
 jupyter notebook
 ```
 
@@ -110,6 +97,7 @@ jupyter notebook
 
 ## ✅ Conclusion
 
-This project demonstrates practical usage of **Pandas for data cleaning, filtering, and transformation**, making raw data ready for further analysis or visualization.
+This project demonstrates practical skills in **data cleaning, filtering, and transformation using Pandas**, making raw data ready for analysis and real-world applications.
 
 ---
+
