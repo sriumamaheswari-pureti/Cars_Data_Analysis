@@ -1,6 +1,3 @@
-Here is your **final clean, professional README.md** (ready to copy & upload to GitHub) 👇
-
----
 
 # 🚗 Cars Data Analysis Project
 
