@@ -3,8 +3,7 @@
 
 ## 📌 Project Overview
 
-This project focuses on **data cleaning and analysis** of a cars dataset using the **Pandas library in Python**. The objective is to preprocess raw data, handle missing values, and perform analysis to extract meaningful insights.
-
+Analyzed a cars dataset using Python (Pandas) to perform data cleaning and exploratory data analysis. The project involved identifying and handling missing values, analyzing the distribution of car manufacturers, filtering region-specific data (Asia and Europe), and removing outliers to improve data quality. Additionally, transformations were applied to key features such as fuel efficiency (MPG) to enhance the dataset for better insights. This project demonstrates practical skills in data preprocessing, analysis, and deriving meaningful insights from raw data.
 ---
 
 ## 📂 Dataset
